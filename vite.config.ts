@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import packageJson from "./package.json";
 
 const getPackageName = () => {
-  return packageJson.name;
+  return packageJson.name.replace(/(\.js)$/, "").replace(/(\.ts)$/, "");
 };
 
 const getPackageNameCamelCase = () => {
@@ -23,7 +23,7 @@ const fileName = {
 
 const formats = Object.keys(fileName) as Array<keyof typeof fileName>;
 
-module.exports = defineConfig({
+export default defineConfig({
   base: "./",
   build: {
     outDir: "./build/dist",
