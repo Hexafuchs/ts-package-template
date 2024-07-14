@@ -33,7 +33,7 @@ npm install @hexafuchs/:package_name
 ## Usage
 
 ```typescript
-import { sum } from ":package_name";
+import { sum } from "@hexafuchs/:package_name";
 ```
 
 ## Testing
