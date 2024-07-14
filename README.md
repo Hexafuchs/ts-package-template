@@ -1,61 +1,71 @@
-# vite-vanilla-ts-lib-starter
+# :package_description
 
-The starter is built on top of Vite 5.x and prepared for writing libraries in TypeScript. It generates a hybrid package - both support for CommonJS and ESM modules.
+[![Latest Version on NPM](https://img.shields.io/npm/v/%40hexafuchs%2F:package_name?style=flat-square)](https://www.npmjs.com/package/@hexafuchs/:package_name)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/hexafuchs/:package_name/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/hexafuchs/:package_name/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/hexafuchs/:package_name/fix-ts-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/hexafuchs/:package_name/actions?query=workflow%3A"Fix+Typescript+code+style+issues"+branch%3Amain)
+[![Monthly Downloads](https://img.shields.io/npm/dm/%40hexafuchs%2F:package_name?style=flat-square)](hhttps://www.npmjs.com/package/@hexafuchs/:package_name)
 
-## Features
+<!--delete-->
+This repo can be used to scaffold a Python package. Unless you are a member of Hexafuchs, please use the
+[Original Template by kbysiec](https://github.com/kbysiec/vite-vanilla-ts-lib-starter) or edit out any references to us.
 
-- Hybrid support - CommonJS and ESM modules
-- IIFE bundle for direct browser support without bundler
-- Typings bundle
-- ESLint - scripts linter
-- Stylelint - styles linter
-- Prettier - formatter
-- Vitest - test framework
-- Husky + lint-staged - pre-commit git hook set up for formatting
+Follow these steps to get started:
 
-## GitHub Template
+1. Press the "Use this template" button at the top of this repo to create a new repo with the contents of this skeleton.
+2. Run "php ./configure.php" to run a script that will replace all placeholders throughout all the files.
+3. Have fun creating your package.
 
-This is a template repo. Click the green [Use this template](https://github.com/kbysiec/vite-vanilla-ts-lib-starter/generate) button to get started.
+Note: Remember to activate discussions in the repository settings.
+<!--/delete-->
 
-## Clone to local
+This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
-If you prefer to do it manually with the cleaner git history
+## Installation
+
+You can install the package via npm (or another tool of your choosing):
 
 ```bash
-git clone https://github.com/kbysiec/vite-vanilla-ts-lib-starter.git
-cd vite-vanilla-ts-lib-starter
-npm i
+npm install @hexafuchs/:package_name
 ```
-
-## Checklist
-
-When you use this template, update the following:
-
-- Remove `.git` directory and run `git init` to clean up the history
-- Change the name in `package.json` - it will be the name of the IIFE bundle global variable and bundle files name (`.cjs`, `.mjs`, `.iife.js`, `d.ts`)
-- Change the author name in `LICENSE`
-- Clean up the `README` and `CHANGELOG` files
-
-And, enjoy :)
 
 ## Usage
 
-The starter contains the following scripts:
+```typescript
+import { sum } from ":package_name";
+```
 
-- `dev` - starts dev server
-- `build` - generates the following bundles: CommonJS (`.cjs`) ESM (`.mjs`) and IIFE (`.iife.js`). The name of bundle is automatically taken from `package.json` name property
-- `test` - starts vitest and runs all tests
-- `test:coverage` - starts vitest and run all tests with code coverage report
-- `lint:scripts` - lint `.ts` files with eslint
-- `lint:styles` - lint `.css` and `.scss` files with stylelint
-- `format:scripts` - format `.ts`, `.html` and `.json` files with prettier
-- `format:styles` - format `.cs` and `.scss` files with stylelint
-- `format` - format all with prettier and stylelint
-- `prepare` - script for setting up husky pre-commit hook
-- `uninstall-husky` - script for removing husky from repository
+## Testing
 
-## Acknowledgment
+```bash
+# All
+npm run test
+```
 
-If you found it useful somehow, I would be grateful if you could leave a star in the project's GitHub repository.
+## Development
 
-Thank you.
+### Building
+
+```bash
+npm run build
+```
+
+### Dev Server
+
+```bash
+npm run dev
+```
+
+### Run linter
+
+```bash
+npm run lint:scripts
+npm run lint:styles
+```
+
+## Changelog
+
+Please see [CHANGELOG](https://github.com/Hexafuchs/:package_name/blob/main/CHANGELOG.md) for more information on what has changed recently.
+
+## License
+
+The MIT License (MIT). Please see [License File](https://github.com/Hexafuchs/:package_name/blob/main/LICENSE.md) for more information.

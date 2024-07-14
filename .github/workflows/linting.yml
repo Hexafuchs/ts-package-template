@@ -1,0 +1,37 @@
+name: Linting
+
+on:
+  push:
+    paths:
+      - '**.js'
+      - '**.ts'
+      - 'package.json'
+      - 'package-lock.json'
+
+jobs:
+  linting:
+    name: Linting
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Eslint
+        run: npm run lint:scripts
+
+      - name: Run Pylint
+        run: python -m pylint --rcfile=pyproject.toml src/
+
+      - name: Run pyright
+        run: python -m pyright
+
+      - name: Run flake8
+        run: python -m flake8 --toml-config=pyproject.toml
