@@ -1,5 +1,5 @@
 {
-  "name": ":package_name",
+  "name": "@hexafuchs/:package_name",
   "version": "0.0.1",
   "homepage": "https://github.com/Hexafuchs/:package_name",
   "contributors": [
