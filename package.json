@@ -16,6 +16,7 @@
     "url": "https://github.com/Hexafuchs/:package_name/issues"
   },
   "license": "MIT",
+  "type": "module",
   "main": "./dist/:package_slug.cjs",
   "module": "./dist/:package_slug.mjs",
   "exports": {
