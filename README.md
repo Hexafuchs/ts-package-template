@@ -39,7 +39,6 @@ import { sum } from "@hexafuchs/:package_name";
 ## Testing
 
 ```bash
-# All
 npm run test
 ```
 
