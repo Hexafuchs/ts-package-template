@@ -1,13 +1,24 @@
 {
-  "name": "vite-vanilla-ts-lib-starter",
-  "private": true,
-  "version": "0.0.2",
-  "main": "./dist/vite-vanilla-ts-lib-starter.cjs",
-  "module": "./dist/vite-vanilla-ts-lib-starter.mjs",
+  "name": ":package_name",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Hexafuchs/:package_name",
+  "contributors": [
+    {
+      "name": ":author_name",
+      "email": "author@domain.com"
+    }
+  ],
+  "keywords": ["Hexafuchs", "typescript"],
+  "bugs": {
+    "url": "https://github.com/Hexafuchs/:package_name/issues"
+  },
+  "license": "MIT",
+  "main": "./dist/:package_slug.cjs",
+  "module": "./dist/:package_slug.mjs",
   "exports": {
     ".": {
-      "require": "./dist/vite-vanilla-ts-lib-starter.cjs",
-      "import": "./dist/vite-vanilla-ts-lib-starter.mjs"
+      "require": "./dist/:package_slug.cjs",
+      "import": "./dist/:package_slug.mjs"
     },
     "./dist/": {
       "import": "./dist/",
@@ -20,13 +31,11 @@
     "build": "rimraf build/**/* && tsc && vite build && dts-bundle-generator --config ./dts-bundle-generator.config.ts && copyfiles ./package.json build",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
-    "lint:scripts": "eslint . --ext .ts",
-    "lint:styles": "stylelint ./**/*.{css,scss}",
+    "lint:scripts": "eslint . --ext .ts,.js",
+    "lint:styles": "stylelint ./**/*.{css,scss,sass}",
     "format:scripts": "prettier . --write",
-    "format:styles": "stylelint ./**/*.{css,scss} --fix",
-    "format": "npm run format:scripts && npm run format:styles",
-    "prepare": "husky install && husky set .husky/pre-commit 'npx lint-staged' && git add .husky/pre-commit",
-    "uninstall-husky": "npm uninstall husky --no-save && git config --unset core.hooksPath && npx rimraf .husky"
+    "format:styles": "stylelint ./**/*.{css,scss,sass} --fix",
+    "format": "npm run format:scripts && npm run format:styles"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.6",
@@ -39,10 +48,10 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
-    "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "postcss": "^8.4.33",
     "postcss-scss": "^4.0.9",
+    "postcss-sass": "^0.5.0",
     "prettier": "^3.2.4",
     "rimraf": "^5.0.5",
     "stylelint": "^16.2.0",
