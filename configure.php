@@ -285,7 +285,7 @@ if (! $useUpdateChangelogWorkflow) {
 
 if (confirm('Install dependencies using npm?', true)) {
    writeln(run('npm install'));
-   confirm('Run tests?') && writeln(run('./node_modules/.bin/vitest'));
+   confirm('Run tests?') && writeln(run('./node_modules/.bin/vitest run'));
 }
 
 confirm('Let this script delete itself?', true) && unlink(__FILE__);
