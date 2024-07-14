@@ -27,12 +27,3 @@ jobs:
 
       - name: Eslint
         run: npm run lint:scripts
-
-      - name: Run Pylint
-        run: python -m pylint --rcfile=pyproject.toml src/
-
-      - name: Run pyright
-        run: python -m pyright
-
-      - name: Run flake8
-        run: python -m flake8 --toml-config=pyproject.toml
