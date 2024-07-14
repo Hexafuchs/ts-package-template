@@ -8,7 +8,10 @@
       "email": "author@domain.com"
     }
   ],
-  "keywords": ["Hexafuchs", "typescript"],
+  "keywords": [
+    "Hexafuchs",
+    "typescript"
+  ],
   "bugs": {
     "url": "https://github.com/Hexafuchs/:package_name/issues"
   },

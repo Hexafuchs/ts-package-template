@@ -6,6 +6,7 @@
 [![Monthly Downloads](https://img.shields.io/npm/dm/%40hexafuchs%2F:package_name?style=flat-square)](hhttps://www.npmjs.com/package/@hexafuchs/:package_name)
 
 <!--delete-->
+
 This repo can be used to scaffold a Python package. Unless you are a member of Hexafuchs, please use the
 [Original Template by kbysiec](https://github.com/kbysiec/vite-vanilla-ts-lib-starter) or edit out any references to us.
 
@@ -16,6 +17,7 @@ Follow these steps to get started:
 3. Have fun creating your package.
 
 Note: Remember to activate discussions in the repository settings.
+
 <!--/delete-->
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
