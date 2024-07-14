@@ -3,6 +3,7 @@ name: Linting
 on:
   push:
     paths:
+      - '.github/workflows/linting.yml'
       - '**.js'
       - '**.ts'
       - 'package.json'

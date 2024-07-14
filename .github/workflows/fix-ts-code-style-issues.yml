@@ -3,6 +3,7 @@ name: Fix Typescript code style issues
 on:
   push:
     paths:
+      - '.github/workflows/fix-ts-code-style-issues.yml'
       - '**.js'
       - '**.ts'
       - '**.css'
