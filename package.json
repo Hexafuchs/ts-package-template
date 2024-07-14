@@ -38,7 +38,7 @@
     "lint:scripts": "eslint . --ext .ts,.js",
     "lint:styles": "stylelint ./**/*.{css,scss,sass}",
     "format:scripts": "prettier . --write",
-    "format:styles": "stylelint ./**/*.{css,scss,sass} --fix",
+    "format:styles": "stylelint ./**/*.{css,scss,sass} --fix --aei",
     "format": "npm run format:scripts && npm run format:styles"
   },
   "devDependencies": {
