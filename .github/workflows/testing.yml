@@ -9,6 +9,8 @@ on:
       - 'package.json'
       - 'package-lock.json'
 
+  workflow_dispatch:
+
 jobs:
   testing:
     runs-on: ${{ matrix.os }}
