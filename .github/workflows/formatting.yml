@@ -1,9 +1,12 @@
-name: Fix Typescript code style issues
+# Original by Spatie licensed as MIT
+# https://github.com/spatie/package-skeleton-laravel/blob/main/.github/workflows/fix-php-code-style-issues.yml
+
+name: Run Formatter
 
 on:
   push:
     paths:
-      - '.github/workflows/fix-ts-code-style-issues.yml'
+      - '.github/workflows/formatting.yml'
       - '**.js'
       - '**.ts'
       - '**.css'
@@ -16,7 +19,7 @@ permissions:
   contents: write
 
 jobs:
-  ts-code-styling:
+  formatting:
     runs-on: ubuntu-latest
     timeout-minutes: 8
 

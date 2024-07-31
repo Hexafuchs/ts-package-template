@@ -1,16 +1,16 @@
-name: run-tests
+name: Run Tests
 
 on:
   push:
     paths:
-      - '.github/workflows/run-tests.yml'
+      - '.github/workflows/testing.yml'
       - '**.js'
       - '**.ts'
       - 'package.json'
       - 'package-lock.json'
 
 jobs:
-  test:
+  testing:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 5
     strategy:

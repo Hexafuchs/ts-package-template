@@ -1,8 +1,8 @@
 # :package_description
 
 [![Latest Version on NPM](https://img.shields.io/npm/v/%40hexafuchs%2F:package_name?style=flat-square)](https://www.npmjs.com/package/@hexafuchs/:package_name)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/hexafuchs/:package_name/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/hexafuchs/:package_name/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/hexafuchs/:package_name/fix-ts-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/hexafuchs/:package_name/actions?query=workflow%3A"Fix+Typescript+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/hexafuchs/:package_name/testing.yml?branch=main&label=tests&style=flat-square)](https://github.com/hexafuchs/:package_name/actions?query=workflow%3A"Run+Tests"+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/hexafuchs/:package_name/linting.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/hexafuchs/:package_name/actions?query=workflow%3A"Run+Linter"+branch%3Amain)
 [![Monthly Downloads](https://img.shields.io/npm/dm/%40hexafuchs%2F:package_name?style=flat-square)](hhttps://www.npmjs.com/package/@hexafuchs/:package_name)
 
 <!--delete-->
