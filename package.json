@@ -33,13 +33,15 @@
   "scripts": {
     "dev": "vite --host",
     "build": "rimraf build/**/* && tsc && vite build && dts-bundle-generator --config ./dts-bundle-generator.config.ts && copyfiles ./package.json build",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "test:coverage": "vitest --coverage",
     "lint:scripts": "eslint . --ext .ts,.js",
     "lint:styles": "stylelint ./**/*.{css,scss,sass}",
     "format:scripts": "prettier . --write",
     "format:styles": "stylelint ./**/*.{css,scss,sass} --fix --aei",
-    "format": "npm run format:scripts && npm run format:styles"
+    "format": "npm run format:scripts && npm run format:styles",
+    "docs": "typedoc"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.6",
