@@ -1,3 +1,6 @@
+# Original by Spatie licensed as MIT
+# https://github.com/spatie/package-skeleton-laravel/blob/main/.github/workflows/dependabot-auto-merge.yml
+
 name: Auto Merge Dependabot
 on: pull_request_target
 

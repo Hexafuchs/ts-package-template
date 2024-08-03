@@ -1,5 +1,8 @@
 #!/usr/bin/env php
 <?php
+# Original by Spatie licensed as MIT
+# https://github.com/spatie/package-skeleton-laravel/blob/main/configure.php
+
 
 function ask(string $question, string $default = ''): string
 {

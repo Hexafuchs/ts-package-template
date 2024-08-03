@@ -1,3 +1,6 @@
+# Original by Andrea Stagi
+# https://dev.to/astagi/publish-to-npm-using-github-actions-23fn
+
 name: Publish Package
 on:
   release:

@@ -1,4 +1,7 @@
-name: "Update Changelog"
+# Original by Spatie licensed as MIT
+# https://github.com/spatie/package-skeleton-laravel/blob/main/.github/workflows/dependabot-auto-merge.yml
+
+name: Update Changelog
 
 on:
   release:

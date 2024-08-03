@@ -8,7 +8,8 @@
 <!--delete-->
 
 This repo can be used to scaffold a Python package. Unless you are a member of Hexafuchs, please use the
-[Original Template by kbysiec](https://github.com/kbysiec/vite-vanilla-ts-lib-starter) or edit out any references to us.
+[Original Template by kbysiec](https://github.com/kbysiec/vite-vanilla-ts-lib-starter) or edit out any references to us
+except of copyright references.
 
 Follow these steps to get started:
 
