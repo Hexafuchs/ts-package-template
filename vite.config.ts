@@ -1,4 +1,9 @@
 /// <reference types="vitest" />
+/*
+ *  Original by Kamil Bysiec licensed as MIT
+ *  (https://github.com/kbysiec/vite-vanilla-ts-lib-starter/blob/master/vite.config.ts)
+ */
+
 import path from 'path';
 import { defineConfig } from 'vite';
 import packageJson from './package.json';

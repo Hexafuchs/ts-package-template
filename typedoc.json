@@ -1,0 +1,12 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true,
+    "includeFolders": true
+  },
+  "categorizeByGroup": true,
+  "searchGroupBoosts": {
+    "Checker": 1.5
+  }
+}

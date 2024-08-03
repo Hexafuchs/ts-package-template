@@ -32,6 +32,8 @@ npm install @hexafuchs/:package_name
 
 ## Usage
 
+Checkout the documentation at [https://hexafuchs.github.io/:package_name/](https://hexafuchs.github.io/:package_name/).
+
 ```typescript
 import { sum } from "@hexafuchs/:package_name";
 ```
