@@ -34,7 +34,12 @@ export default defineConfig({
       fileName: format => fileName[format],
     },
   },
-  test: {},
+  test: {
+    globals: true,
+    coverage: {
+      exclude: ['**/vite-env.d.ts', '**/dts-bundle-generator.config.ts', '**/docs/**'],
+    },
+  },
   resolve: {
     alias: [
       { find: '@', replacement: path.resolve(__dirname, 'src') },
