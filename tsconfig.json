@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
     "rootDir": ".",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@@/*": ["./*"],
-    },
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
